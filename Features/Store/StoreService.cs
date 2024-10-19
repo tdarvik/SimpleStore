@@ -30,20 +30,19 @@ public class StoreService
 
     public void AddItem(Item item)
     {
+        if (_items.Any(i => i.Id == item.Id)) throw new ArgumentException($"There's already an item with the id {item.Id}");
         _items.Add(item);
     }
 
     public void RemoveItem(string id)
     {
-        var item = _items.FirstOrDefault(i => i.Id == id);
-        if (item != null)
-        {
-            _items.Remove(item);
-        }
+        var item = _items.FirstOrDefault(i => i.Id == id)
+            ?? throw new ArgumentException($"Cannot find item to delete with id {id}");
+        _items.Remove(item);
     }
 
     public List<Item> GetItems()
     {
-        return new List<Item>(_items);
+        return _items;
     }
 }
