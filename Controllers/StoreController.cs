@@ -38,4 +38,22 @@ public class StoreController : ControllerBase
         var items = _storeService.GetItems().Select(item => new ItemDTO(item));
         return Ok(items);
     }
+
+    [HttpPost]
+    public IActionResult AddItem([FromBody] ItemDTO item)
+    {
+        var name = item.Name.Trim();
+        var description = item.Description.Trim();
+
+        if (item == null || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(description) || item.Price <= 0)
+            return BadRequest("Ulovlig data");
+
+        _storeService.AddItem(new Item()
+        {
+            Name = name,
+            Description = description,
+            Price = item.Price
+        });
+        return Ok();
+    }
 }

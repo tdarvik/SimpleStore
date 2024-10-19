@@ -20,6 +20,17 @@
         <tbody id="itemTableBody">
             <!-- Rows will be dynamically added here -->
         </tbody>
+        <tbody>
+            <tr>
+                <td><input type="text" placeholder="Navn" id="editor-name" onkeyup="checkIfAddPossible()" /></td>
+                <td><input type="text" placeholder="Beskrivelse" id="editor-description" onkeyup="checkIfAddPossible()" /></td>
+                <td><input type="number" placeholder="Pris" min="0" id="editor-price" onkeyup="checkIfAddPossible()" /></td>
+                <td class="actions">
+                    <button type="button" id="add-item-button" onclick="addItem()" disabled>Legg til</button>
+                    <button class="clear" type="button" onclick="resetEditor()">Reset</button>
+                </td>
+            </tr>
+        </tbody>
     </table>
     <script src="js/site.js"></script>
 </body>

@@ -4,7 +4,13 @@ body {
     color: #343a40;
     padding: 0;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
+}
+
+@media (width <= 1550px) {
+    body {
+        width: 90%;
+    }
 }
 
 h1, h2 {
@@ -41,17 +47,28 @@ tr:nth-child(even) {
 button {
     background-color: #FFF;
     color: #343a40;
-    border: 1px solid rgba(0,0,0,0.1);
-    padding: 5px 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 0.5em 1em;
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.3s ease;
+}
+
+.clear {
+    background: none;
+    border: 1px solid rgba(0,0,0,0);
 }
 
 button:hover {
     background-color: #c82333;
     color: white;
     border-color: #c82333;
+}
+
+button:disabled, button[disabled] {
+    cursor: not-allowed;
+    border-color: rgba(0,0,0,0.1);
+    color: #6d7a87;
 }
 
 form {
@@ -64,4 +81,8 @@ form {
 
 .actions {
     text-align: center;
+}
+
+input {
+    padding: 0.5em;
 }
