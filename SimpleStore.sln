@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35410.144
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStore", "src\SimpleStore\SimpleStore.csproj", "{4A093738-D548-4E12-BBAA-64189B406ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStoreUTest", "test\SimpleStoreUTest\SimpleStoreUTest\SimpleStoreUTest.csproj", "{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStoreUTest", "test\SimpleStoreUTest\SimpleStoreUTest.csproj", "{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
