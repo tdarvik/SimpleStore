@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35410.144 d17.12
+VisualStudioVersion = 17.12.35410.144
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStore", "src\SimpleStore\SimpleStore.csproj", "{4A093738-D548-4E12-BBAA-64189B406ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStoreUTest", "test\SimpleStoreUTest\SimpleStoreUTest\SimpleStoreUTest.csproj", "{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4A093738-D548-4E12-BBAA-64189B406ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A093738-D548-4E12-BBAA-64189B406ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A093738-D548-4E12-BBAA-64189B406ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DACEDB3-1FA1-4322-B472-7170FEAFF70A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
