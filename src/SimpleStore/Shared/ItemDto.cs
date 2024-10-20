@@ -1,4 +1,4 @@
-﻿namespace SimpleStore.Features.Store;
+﻿namespace SimpleStore.Shared;
 
 public class ItemDTO
 {

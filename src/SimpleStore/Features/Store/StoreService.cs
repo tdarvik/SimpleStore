@@ -1,6 +1,7 @@
 ﻿namespace SimpleStore.Features.Store;
 using System.Collections.Generic;
 using System.Linq;
+using SimpleStore.Shared;
 
 public class StoreService
 {

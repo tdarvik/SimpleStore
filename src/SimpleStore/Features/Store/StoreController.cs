@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SimpleStore.Features.Store;
+using SimpleStore.Shared;
 
 [ApiController]
 [Route("api/[controller]")]

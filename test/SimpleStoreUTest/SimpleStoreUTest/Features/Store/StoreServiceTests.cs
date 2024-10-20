@@ -1,4 +1,5 @@
 ﻿using SimpleStore.Features.Store;
+using SimpleStore.Shared;
 
 namespace SimpleStoreUTest.Store;
 

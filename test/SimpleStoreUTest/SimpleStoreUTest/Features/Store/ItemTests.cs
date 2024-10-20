@@ -1,6 +1,6 @@
-﻿using SimpleStore.Features.Store;
+﻿namespace SimpleStoreUTest.Store;
 
-namespace SimpleStoreUTest.Store;
+using SimpleStore.Shared;
 
 public class ItemTests
 {
