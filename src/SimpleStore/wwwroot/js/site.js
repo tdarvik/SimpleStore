@@ -89,4 +89,5 @@ function getEditorValue(editorId) {
 
 function resetEditor() {
     ["editor-name", "editor-description", "editor-price"].map(e => document.getElementById(e).value = "");
+    checkIfAddPossible();
 }
