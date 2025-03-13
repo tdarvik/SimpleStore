@@ -72,7 +72,7 @@ function checkIfAddPossible() {
 
 function validInput() {
     const editorValues = getEditorValues();
-    return editorValues.map(e => e.value).filter(e => e !== null).length === 3;
+    return editorValues.map(e => e.value).filter(value => value !== null && value.length > 0).length === 3;
 }
 
 function getEditorValues() {
