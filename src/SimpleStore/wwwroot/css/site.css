@@ -60,9 +60,9 @@ button {
 }
 
 button:hover {
-    background-color: #c82333;
+    background-color: #007bff;
     color: white;
-    border-color: #c82333;
+    border-color: #007bff;
 }
 
 button:disabled, button[disabled] {
