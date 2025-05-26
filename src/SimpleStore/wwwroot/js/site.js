@@ -27,7 +27,8 @@ function fetchItems() {
                 <td>${item.description}</td>
                 <td>${item.price},-</td>
                 <td class="actions"><button onclick="deleteItem('${item.id}')">Delete</button></td>
-            `;
+                `;
+
                 tableBody.appendChild(row);
             });
         })
@@ -40,7 +41,8 @@ function deleteItem(id) {
     fetch(`/api/store/${id}`, {
         method: 'DELETE'
     }).then(response => {
-        if (response.ok) fetchItems();
+        if (!response.ok) return;
+        fetchItems();
     });
 }
 
@@ -59,10 +61,9 @@ function addItem() {
             price: Number(editorValues[2].value),
         })
     }).then(res => {
-        if (res.ok) {
-            fetchItems();
-            resetEditor();
-        };
+        if (!res.ok) return;
+        fetchItems();
+        resetEditor();
     });
 }
 
